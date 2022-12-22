@@ -117,7 +117,7 @@ footer {
   vertical-align: top;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: transform 0.5s;
 }
 

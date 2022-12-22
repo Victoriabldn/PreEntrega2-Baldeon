@@ -1,0 +1,45 @@
+.light-box{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: tranform 3.s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.light-box img {
+    width: 75vw;
+    max-height: 70vh;
+}
+.light-box:target {
+transform: scale(1);
+} 
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: rgba(183, 47, 167, 0.5);
+    color: aliceblue;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.next{
+    display: block;
+    background: rgba(183, 47, 167, 0.5);
+    color: aliceblue;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+
+
+}
