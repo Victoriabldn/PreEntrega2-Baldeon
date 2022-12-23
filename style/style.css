@@ -11,135 +11,18 @@ body {
   background-color: rgba(212, 81, 164, 0.475);
 }
 
-main {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 550;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 30px;
-  background-color: rgba(120, 14, 139, 0.192);
-}
-
-header {
-  width: 100%;
-  padding: 10px;
-  background-color: rgb(113, 26, 120);
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-li {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
-  color: aliceblue;
-  text-transform: uppercase;
+  color: aliceblue text-transform uppercase;
   padding: 20px;
 }
 
-img {
-  margin-top: 10px;
-}
-
-footer {
-  padding: 10px;
-  background-color: rgb(113, 26, 120);
-}
-
-.footer_index {
-  flex: none;
-  margin: 0;
-  padding: 10px;
-  background-color: rgb(113, 26, 120);
-}
-
-.icon {
-  width: 48px;
-  height: 48px;
-}
-
-.redes {
-  flex-direction: row;
-  justify-content: center;
-}
-
-.padre h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 50px;
-  background-color: rgba(120, 14, 139, 0.192);
-}
-
-.padre p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 550;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 30px;
-  background-color: rgba(120, 14, 139, 0.192);
-}
-
-.hijo h2 {
-  font-weight: 100;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 40;
-  background-color: rgba(120, 14, 139, 0.192);
-}
-
-.linea {
-  background-color: rgb(80, 20, 64);
-  height: 5px;
-  width: 100%;
-  display: block;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  width: 95%;
-  margin: auto;
-  grid-gap: 10px;
-  padding: 40px 0;
-  overflow: hidden;
-}
-
-.galeria img {
-  width: 100%;
-  vertical-align: top;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-
-.galeria > a {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 6px rgb 0d, 0, 0.5;
-}
-
-.galeria a:hover img {
-  filter: blur(2px);
-  transform: rotate(10deg) scale(1.3);
-}
-
-/* para las fechas de la galeria */
 .light-box {
   position: fixed;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  transition: transform 2s ease-in-out;
+  transition: transform 3s ease-in-out;
   width: 100%;
   z-index: 1000;
   display: flex;
@@ -180,4 +63,146 @@ footer {
   line-height: 30px;
   text-decoration: none;
   text-align: center;
+}
+
+ul {
+  list-style: list-style-type none;
+  margin: 0;
+  padding: 0%;
+  overflow: hidden;
+  background-color: rgb(113, 26, 120);
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+  background-color: rgba(120, 14, 139, 0.192);
+}
+
+header {
+  color: aliceblue;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(113, 26, 120);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue text-transform uppercase;
+  padding: 20px;
+}
+
+img {
+  margin-top: 10px;
+}
+
+footer {
+  padding: 10px;
+  background-color: rgb(113, 26, 120);
+}
+
+.footer_index {
+  flex: none;
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(113, 26, 120);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.redes {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.padre h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 50px;
+  background-color: rgba(120, 14, 139, 0.192);
+}
+.padre p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+  background-color: rgba(120, 14, 139, 0.192);
+}
+
+.hijo h2 {
+  font-weight: 100;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40;
+  background-color: rgba(120, 14, 139, 0.192);
+}
+
+.linea {
+  background-color: rgb(80, 20, 64);
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.galeria img {
+  width: 100%;
+  vertical-align: top;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.galeria > a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgb 0d, 0, 0.5;
+}
+
+.galeria a:hover img {
+  color: aliceblue;
+  filter: blur(2px);
+  transform: rotate(10deg) scale(1.3);
 }/*# sourceMappingURL=style.css.map */

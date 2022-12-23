@@ -2,6 +2,7 @@
 @import "fuente";
 @import "galeriaimg";
 @import "variables";
+@import "navbar";
 
 main{
     font-family: 'Montserrat', sans-serif;
@@ -12,7 +13,7 @@ main{
     background-color: rgba(120, 14, 139, 0.192);
 }
 header{
-    
+    color: aliceblue;
     width: 100%;
     padding:10px;
     background-color: $colorheadyfoot;
@@ -31,7 +32,7 @@ li{
 a{
     text-decoration: none;
     color: $colorletrashead
-    text-transform uppercase;
+    text-transform uppercase; 
     padding: 20px; 
 }
 
@@ -62,7 +63,7 @@ footer{
 }
 .padre { 
     h1 { 
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
     padding: 20px 0;
@@ -117,7 +118,11 @@ footer{
     overflow: hidden;
     box-shadow: 0 0 6px rgb (0d, 0, .5);
 }
-.galeria a:hover img {
+.galeria a{
+&:hover img {
+    color: aliceblue;
     filter: blur(2px);
     transform: rotate(10deg)scale(1.3)
-}  
+}      
+}
+
