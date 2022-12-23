@@ -1,20 +1,21 @@
 @import "generales";
 @import "fuente";
 @import "galeriaimg";
+@import "variables";
 
 main{
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
     text-align: center;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 30px; 
     background-color: rgba(120, 14, 139, 0.192);
 }
 header{
     
     width: 100%;
     padding:10px;
-    background-color: rgb(113, 26, 120);
+    background-color: $colorheadyfoot;
 }
 
 nav ul{
@@ -29,9 +30,9 @@ li{
 
 a{
     text-decoration: none;
-    color: aliceblue;
-    text-transform: uppercase;
-    padding: 20px;
+    color: $colorletrashead
+    text-transform uppercase;
+    padding: 20px; 
 }
 
 img{
@@ -40,14 +41,14 @@ img{
 
 footer{
     padding: 10px;
-    background-color: rgb(113, 26, 120);
+    background-color: $colorheadyfoot;
 
 }
 .footer_index{ 
     flex: none;
     margin: 0;
     padding: 10px;
-    background-color: rgb(113, 26, 120);
+    background-color: $colorheadyfoot;
 }
 .icon{
     width: 48px;
@@ -59,28 +60,33 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
-.padre h1{ 
-    font-family: 'Montserrat', sans-serif;
+.padre { 
+    h1 { 
+        font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
     padding: 20px 0;
-    font-size: 50px;
-    background-color: rgba(120, 14, 139, 0.192);
-}
-.padre p {
+    font-size: $sizegrande;
+    background-color: $coloroscuro;
+    }
+    
+    p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
     text-align: center;
     padding: 10px 0;
-    font-size: 30px;
-    background-color: rgba(120, 14, 139, 0.192);
+    font-size: $sizechico;
+    background-color: $coloroscuro;
 }
-.hijo h2{
+}
+.hijo {
+    h2{ 
     font-weight: 100;
     text-align: center;
     padding: 20px 0;
     font-size: 40;
-    background-color: rgba(120, 14, 139, 0.192);  
+    background-color: $coloroscuro;
+    }
 }
 .linea {
     background-color: rgb(80, 20, 64);
