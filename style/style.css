@@ -22,7 +22,7 @@ a {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  transition: transform 3s ease-in-out;
+  transition: transform 0.01s ease-in-out;
   width: 100%;
   z-index: 1000;
   display: flex;
@@ -85,6 +85,39 @@ li a {
   text-transform: uppercase;
 }
 
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 30px;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+}
+.items img {
+  width: 150;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.items h2 {
+  padding: 10px;
+  text-align: center;
+}
+.items p {
+  text-align: center;
+  padding: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .items .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .items .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 main {
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
@@ -119,6 +152,7 @@ a {
 
 img {
   margin-top: 10px;
+  padding: 10px;
 }
 
 footer {

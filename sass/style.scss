@@ -3,7 +3,8 @@
 @import "galeriaimg";
 @import "variables";
 @import "navbar";
-
+@import "productos";
+@import "medias";
 main{
     font-family: 'Montserrat', sans-serif;
     font-weight: 550;
@@ -38,6 +39,7 @@ a{
 
 img{
     margin-top: 10px;
+    padding: 10px;
 } 
 
 footer{
